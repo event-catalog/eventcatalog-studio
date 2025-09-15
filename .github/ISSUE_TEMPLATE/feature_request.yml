@@ -1,0 +1,98 @@
+name: 🚀 Feature Request for EventCatalog Studio
+description: Suggest a new feature or enhancement for EventCatalog Studio
+title: "[FEATURE] "
+labels: ["enhancement", "studio", "early-access"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a new feature for EventCatalog Studio!
+
+        As you have early access to Studio, your feedback is incredibly valuable in shaping the product.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of the feature you'd like to see
+      placeholder: Describe the feature you want...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case / Problem Statement
+      description: What problem does this feature solve? What's your use case?
+      placeholder: Explain the problem this feature would solve...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How do you envision this feature working?
+      placeholder: Describe your proposed solution...
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or features?
+      placeholder: Describe alternatives you've considered...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to your workflow?
+      options:
+        - Low - Nice to have
+        - Medium - Would improve workflow
+        - High - Critical for adoption
+        - Urgent - Blocking current work
+    validations:
+      required: true
+
+  - type: dropdown
+    id: studio-area
+    attributes:
+      label: Studio Area
+      description: Which part of EventCatalog Studio does this relate to?
+      options:
+        - Event Discovery & Visualization
+        - Schema Management
+        - Documentation Generation
+        - Team Collaboration
+        - Integration & APIs
+        - Performance & Monitoring
+        - User Interface & Experience
+        - Configuration & Setup
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or examples about the feature request
+      placeholder: Any additional information...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Early Access Agreement
+      description: Please confirm your understanding
+      options:
+        - label: I understand this is early access software and features may change
+          required: true
+        - label: I'm willing to provide follow-up feedback if needed
+          required: true

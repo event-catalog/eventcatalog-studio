@@ -1,0 +1,163 @@
+name: 🐛 Bug Report for EventCatalog Studio
+description: Report a bug or issue with EventCatalog Studio
+title: "[BUG] "
+labels: ["bug", "studio", "early-access"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug in EventCatalog Studio!
+
+        Since you're using early access software, bug reports are especially valuable. Please provide as much detail as possible to help us reproduce and fix the issue.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is
+      placeholder: Describe what happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: Describe what you expected...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: Describe what actually happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this bug?
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. See error...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - Low - Minor issue, doesn't affect workflow
+        - Medium - Affects workflow but has workaround
+        - High - Significantly impacts workflow
+        - Critical - Blocks usage completely
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      description: How often does this bug occur?
+      options:
+        - Always - Every time
+        - Often - Most of the time
+        - Sometimes - Occasionally
+        - Rarely - Once or twice
+    validations:
+      required: true
+
+  - type: dropdown
+    id: studio-area
+    attributes:
+      label: Studio Area
+      description: Which part of EventCatalog Studio is affected?
+      options:
+        - Event Discovery & Visualization
+        - Schema Management
+        - Documentation Generation
+        - Team Collaboration
+        - Integration & APIs
+        - Performance & Monitoring
+        - User Interface & Experience
+        - Configuration & Setup
+        - Authentication & Authorization
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: studio-version
+    attributes:
+      label: Studio Version
+      description: What version of EventCatalog Studio are you using?
+      placeholder: e.g., v1.0.0-beta.1
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser & Version
+      description: What browser and version are you using?
+      placeholder: e.g., Chrome 119.0.0.0, Safari 17.1
+    validations:
+      required: false
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: What operating system are you using?
+      placeholder: e.g., macOS 14.1, Windows 11, Ubuntu 22.04
+    validations:
+      required: false
+
+  - type: textarea
+    id: error-logs
+    attributes:
+      label: Error Messages / Logs
+      description: Any error messages or relevant logs
+      placeholder: Paste any error messages or logs here...
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Videos
+      description: If applicable, add screenshots or videos to help explain the problem
+      placeholder: Drag and drop or paste screenshots/videos here...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other context about the problem
+      placeholder: Add any other relevant information...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have provided sufficient detail to reproduce the issue
+          required: true
+        - label: I understand this is early access software and bugs are expected
+          required: true

@@ -1,0 +1,156 @@
+name: 💬 General Feedback for EventCatalog Studio
+description: Share general feedback, questions, or suggestions for EventCatalog Studio
+title: "[FEEDBACK] "
+labels: ["feedback", "studio", "early-access"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your feedback on EventCatalog Studio!
+
+        Your early access feedback helps us understand how Studio is working for you and what we can improve. This template is for general feedback that doesn't fit into a specific bug report or feature request.
+
+  - type: dropdown
+    id: feedback-type
+    attributes:
+      label: Feedback Type
+      description: What type of feedback are you providing?
+      options:
+        - General Experience
+        - User Interface / User Experience
+        - Documentation
+        - Performance
+        - Integration Experience
+        - Onboarding / Getting Started
+        - Workflow / Process
+        - Comparison with Other Tools
+        - Question / Clarification
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback-description
+    attributes:
+      label: Feedback Description
+      description: Please share your feedback, thoughts, or questions
+      placeholder: Tell us what's on your mind...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: experience-level
+    attributes:
+      label: Your Experience Level
+      description: How would you describe your experience with event-driven architectures?
+      options:
+        - Beginner - New to event-driven architectures
+        - Intermediate - Some experience with events/messaging
+        - Advanced - Extensive experience with event systems
+        - Expert - Leading event-driven initiatives
+    validations:
+      required: false
+
+  - type: dropdown
+    id: team-size
+    attributes:
+      label: Team Size
+      description: How many people are using or would use EventCatalog Studio?
+      options:
+        - Individual - Just me
+        - Small team - 2-5 people
+        - Medium team - 6-15 people
+        - Large team - 16-50 people
+        - Enterprise - 50+ people
+    validations:
+      required: false
+
+  - type: dropdown
+    id: use-case
+    attributes:
+      label: Primary Use Case
+      description: What's your main use case for EventCatalog Studio?
+      options:
+        - Event Documentation
+        - Schema Management
+        - Team Collaboration
+        - API Discovery
+        - Compliance / Governance
+        - Developer Onboarding
+        - System Integration
+        - Event Monitoring
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-works-well
+    attributes:
+      label: What's Working Well?
+      description: What aspects of Studio do you find most valuable or enjoyable?
+      placeholder: Tell us what you like...
+    validations:
+      required: false
+
+  - type: textarea
+    id: pain-points
+    attributes:
+      label: Pain Points / Challenges
+      description: What challenges or frustrations have you encountered?
+      placeholder: Tell us what's challenging...
+    validations:
+      required: false
+
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Comparison with Other Tools
+      description: How does Studio compare to other tools you've used for similar purposes?
+      placeholder: How does it compare to other solutions...
+    validations:
+      required: false
+
+  - type: textarea
+    id: missing-features
+    attributes:
+      label: What's Missing?
+      description: Are there features or capabilities you expected but didn't find?
+      placeholder: What would make Studio more valuable for you...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: recommendation
+    attributes:
+      label: Would You Recommend Studio?
+      description: Based on your experience so far, would you recommend EventCatalog Studio?
+      options:
+        - Definitely - It's already very valuable
+        - Probably - With some improvements
+        - Maybe - Needs significant work
+        - Unlikely - Major concerns
+        - Too early to say - Need more time
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other thoughts, context, or suggestions?
+      placeholder: Anything else you'd like to share...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: follow-up
+    attributes:
+      label: Follow-up
+      description: Communication preferences
+      options:
+        - label: I'm open to follow-up questions about this feedback
+          required: false
+        - label: I'd like to be notified of updates related to this feedback
+          required: false
+        - label: I'm interested in participating in user research or beta testing
+          required: false
